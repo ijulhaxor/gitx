@@ -2,7 +2,7 @@
 
 read -p "Repository name : " repo
 read -p "Add file?       : " addfile
-echo "# $repo" >> README.md
+echo -e "# $repo" >> README.md
 git init
 git add $addfile
 git commit -m "first commit"
